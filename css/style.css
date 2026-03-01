@@ -156,7 +156,7 @@
  h1,h2,h3,h4,h5,h6,p,ul { margin:0;padding: 0;}
  h1,h2,h3,h4,h5,h6 {font-family: 'Nunito Sans', sans-serif; color: #232323;}
  h1 {font-size: 60px; font-weight: 900;line-height: 70px;}
- h2 {font-size: 38px; font-weight: 900;}
+ h2 {font-size: 38px; font-weight: 900; margin-top: 80px;}
  h3 {font-size: 32px; font-weight: 700;}
  h4 {font-size: 24px; font-weight: 700;}
  h5 {font-size: 22px; font-weight: 700;}
@@ -164,7 +164,7 @@
  p {line-height: 27px;}
  ul {list-style-type: none;}
  body a {text-decoration: none;color: #232323; display: inline-block;font-family: 'Nunito Sans', sans-serif;}
- a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
+ a:hover,a:focus,a:visited {text-decoration: none; outline: none;color: #26ace3;}
  img {max-width: 100%; display: block;}
  button {border:none;outline: none;box-shadow: none;display: block; padding: 0;cursor: pointer;}
  button:focus {outline: none;}
@@ -1731,25 +1731,44 @@ body .theme-button-one:hover {background:#000f32; }
 }
 .our-blog .comment-area .single-comment:last-child {margin: 0;padding: 0;border: none;}
 /*---------------- Contact Us ----------------*/
-.google-map-two {height: 410px;}
+
+.google-map-two {
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.google-map-two iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+/* Contact section */
+
 .contact-us-section .main-content {
   margin-top: 50px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
 }
+
 .contact-us-section .img-box {
   background: url(../images/home/22.jpg) no-repeat center;
   background-size: cover;
-  height: 500px;
+  min-height: 500px;
   border-radius: 5px 0 0 5px;
 }
+
 .contact-us-section .form-wrapper {
   background: #fff;
   border-radius: 0 5px 5px 0;
-  height: 500px;
-  padding: 75px 40px 60px 40px;
+  min-height: 500px;
+  padding: 60px 40px;
 }
+
+/* Form focus */
 .theme-form-one input:focus,
-.theme-form-one textarea:focus {border-bottom-color: #001a57;}
+.theme-form-one textarea:focus {
+  border-bottom-color: #001a57;
+}
 /*======================= Form Validation ===================*/
 .alert-wrapper {
   display: none;
@@ -2146,4 +2165,202 @@ body .theme-button-one:hover {background:#000f32; }
 .single-value-block p {
   margin: 0;
   color: #666;
+}
+
+.map-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+
+/* =============================================
+   FOOTER STYLE
+============================================= */
+
+.theme-footer-one {
+  background: #0b1e3c;
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+/* Top Footer */
+.top-footer {
+  padding: 80px 0;
+}
+
+.theme-footer-one .title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.theme-footer-one p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* Links */
+.theme-footer-one ul {
+  padding: 0;
+}
+
+.theme-footer-one ul li {
+  list-style: none;
+}
+
+.theme-footer-one ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 0;
+  transition: 0.3s;
+}
+
+.theme-footer-one ul li a:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+/* Contact */
+.contact-info a {
+  color: #cbd5e1;
+}
+
+.contact-info a:hover {
+  color: #ffffff;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+  color: #cbd5e1;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* CTA Button */
+.btn-primary {
+  background: #2563eb;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+/* Trust */
+.trust p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+  background: #020617;
+  padding: 15px 0;
+  font-size: 13px;
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0;
+}
+
+.footer-menu li {
+  list-style: none;
+}
+
+.footer-menu a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.footer-menu a:hover {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-menu {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+
+.best-list-item li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.best-list-item li i {
+    font-size: 24px;
+    color: #061948;
+    min-width: 40px;
+    margin-top: 5px;
+}
+
+.best-list-item li h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.best-list-item li p {
+    margin: 5px 0 0;
+}
+
+/* REMOVE old flaticon icon */
+.panel-title a:before {
+    content: none !important;
+}
+
+/* Add new icon (right side) */
+.panel-title a {
+    position: relative;
+    display: block;
+    padding-right: 30px;
+}
+
+/* Default (collapsed) → PLUS */
+.panel-title a::after {
+    content: "\f067"; /* plus */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #061948;
+}
+
+/* When open → MINUS */
+.panel-title a[aria-expanded="true"]::after {
+    content: "\f068"; /* minus */
 }
