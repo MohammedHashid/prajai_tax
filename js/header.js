@@ -35,7 +35,7 @@ this.innerHTML = `
 
           <!-- CTA -->
           <li class="quotes">
-            <a href="#">GET A FREE CONSULTATION</a>
+            <a href="contact.html">GET A FREE CONSULTATION</a>
           </li>
 
         </ul>
@@ -76,7 +76,7 @@ this.innerHTML = `
                     </li> -->
 
               <li class="has-dropdown">
-                <a href="services.html">Our Services</a>
+                <a href="#">Our Services</a>
 
                 <ul class="dropdown">
                   <li><a href="income-tax.html">Income Tax Filing</a></li>
@@ -119,23 +119,23 @@ this.innerHTML = `
         </div>
 
         <!-- Right Widgets -->
-        <div class="right-widget float-right">
-          <ul>
+        <!-- <div class="right-widget float-right">
+          <ul> -->
 
             <!-- Social Icons -->
-            <li class="social-icon">
+            <!-- <li class="social-icon">
               <ul>
                 <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
-            </li>
+            </li> -->
 
 
 
             <!-- Search -->
-            <li class="search-option">
+            <!-- <li class="search-option">
               <div class="dropdown">
                 <button type="button" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -148,10 +148,10 @@ this.innerHTML = `
                   </button>
                 </form>
               </div>
-            </li>
+            </li> -->
 
-          </ul>
-        </div>
+          <!-- </ul>
+        </div> -->
 
       </div>
     </div>

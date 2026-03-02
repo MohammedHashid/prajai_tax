@@ -49,9 +49,9 @@ class SiteFooter extends HTMLElement {
               <h6 class="title">Quick Links</h6>
               <ul>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                
               </ul>
             </div>
 
